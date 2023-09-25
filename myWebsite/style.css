@@ -1,0 +1,265 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@600&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: 'Cairo', sans-serif;
+font-family: 'Poppins', sans-serif;
+margin: 0;
+border: 0;
+box-sizing: border-box;
+scroll-behavior: smooth;
+text-decoration: none;
+}
+header{
+    background-color: #f0f0f0;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 1% 20%;
+}
+.logo{
+    color: #3a6cf4;
+    text-transform: uppercase;
+font-weight: 700;
+font-size: 1.8em;
+}
+header nav a{
+    color: #3a6cf4;
+   padding-left: 30px;
+   font-weight: 500;
+   font-size: 1.1em;
+}
+header nav a:hover{
+color: blueviolet;
+}
+section{
+    padding: 100px ;
+  
+}
+.main{
+    
+    width: 100%;
+    min-height:100vh;
+    display: flex;
+    
+    flex-direction: column;
+    /* align-items: center; */
+   
+  
+    background: url(./image/Mostafa_image.jpg) no-repeat;
+
+    background-size:contain;
+    background-position:right;
+    background-attachment: fixed;
+    background-color:#000033;
+}
+.main h2{
+    color: white;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+.main h2 span{
+    display: inline-block;
+    margin-top: 10px;
+    color: #4e9eff;
+    font-size: 3em;
+    font-weight: 600;
+}
+.main h3{
+    color: #fff;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 10px 0 30px;
+}
+.main-btn{
+    color: white;
+    background-color: blue;
+    border-radius:15px blue solid ;
+    display: inline-block;
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 0.7s ease;
+}
+.main-btn:hover{
+    background-color: #0a49f6;
+    transform: scale(1.1);
+}
+.social-icos{
+    color: white;
+    font-size: 1.7em;
+    padding-right:30px ;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+   
+}
+.cards .title{
+    text-align: center;
+    color: #3a6cf4;
+    font-size: 2.4em;
+    font-weight: 800;
+    margin-bottom: 30px;
+    
+}
+.cards .content{
+    display: flex;
+    justify-content:center;
+    flex-direction: row;
+    flex-wrap: wrap;
+   
+}
+ .card{
+   background-color: white;
+   width: 21.25em;
+   box-shadow:0 5px 25px rgba(1 1 1 / 15%) ;
+   border-radius: 10px;
+   padding: 25;
+   margin: 15px;
+transition: all ease .8s;
+padding-bottom: 30px;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.card .icon{
+    color: #3a6cf4;
+    font-size: 8em;
+    text-align: center;
+}
+.card  .info{
+    text-align: center;
+}
+.card  .info h3{
+    color: #3a6cf4;
+    font-size: 1.2em;
+    font-weight: 800;
+   
+    margin: 10px;
+}
+#Project{
+    background-color: #000016;
+}
+#Project .card{
+   border: 1px solid white;
+   min-height: 14em;
+  
+}
+img{
+    width: 100%;
+    border-radius: 10px;
+}
+#Project .card:hover img{
+    opacity: 0.8;
+}
+.project-info{
+    padding: 1em;
+}
+project-category{
+    font-size: .8em;
+    color: black;
+}
+.project-title{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 800;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+.mor-details{
+    color: #3a6cf4;
+    
+}
+.mor-details:hover{
+    color: #601cfc;
+}
+.content-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
+}
+.content-info .h3{
+    color:black
+}
+footer{
+    background-color: #000016;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 2em;
+    align-items: center;
+}
+footer p{
+    font-size: 1.3em;
+    font-weight: 700;
+}
+footer p span{
+    color: #3a6cf4;
+}
+@media (max-width:1023px){
+header{
+    padding: 12px 23px;
+}
+nav a{
+    padding-left:10px;
+}
+.title{
+    font-size: 1.5em;
+}
+selection{
+    padding: 80px 20px;
+}
+h3{
+    font-size: 1.6em;
+}
+.content{
+    flex-direction: column;
+    align-items: center;
+}
+}
+@media (max-width:645px){
+    body{
+        font-size: 11px;
+    }
+    h2{
+        font-size: .7px;
+    }
+    h3{
+        font-size: 1.2;
+    }
+   .main{
+    background-size:cover;
+    background-position:top;
+    background-attachment: fixed;
+   }
+   
+}
+/* @media (max-width:522px){
+    header a.logo{
+        display: none;
+    }
+@media(min-width:410px) and (max-width:535px){
+   
+} */
+@media (max-width:415px){
+    body{
+        font-size: 8px;
+    }
+}
+@media (max-width:335px){
+    header a.logo{
+        display: none;
+    }
+    .main h2 span{
+        font-size:2em ;
+        }
+}
+
